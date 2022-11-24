@@ -1,0 +1,40 @@
+<div style="display:flex;height: 750px;justify-content: center ;align-items: center;">
+    <div class="mycal">
+      <input #box (keyup.enter)="calvalue(box.value)" [(ngModel)]="toshow" type="text" style="width:80%;
+      margin:10px 5px;
+      font-size: 20px;
+      padding:10px; 
+      color: black; 
+      font-weight:700;
+      border-radius: 15px;
+      border:1px solid black;">
+      <div class="all-btn">
+        <div class="all-btn-num">
+          <button (click)="inputfromuser('1')">1</button>
+          <button (click)="inputfromuser('2')">2</button>
+          <button (click)="inputfromuser('3')">3</button>
+          <button (click)="inputfromuser('4')">4</button>
+          <button (click)="inputfromuser('5')">5</button>
+          <button (click)="inputfromuser('6')">6</button>
+          <button (click)="inputfromuser('7')">7</button>
+          <button (click)="inputfromuser('8')">8</button>
+          <button (click)="inputfromuser('9')">9</button>
+          <button (click)="inputfromuser('0')">0</button>
+            <div class="btn-extra">
+          <button (click)="inputfromuser('.')">.</button>
+          <button (click)="back()">back</button>
+            </div>
+        </div>
+        <div class="all-btn-sign">
+          <button (click)="inputfromuser('+')">+</button>
+          <button (click)="inputfromuser('-')">-</button>
+          <button (click)="inputfromuser('*')">*</button>
+          <button (click)="inputfromuser('/')">/</button>
+        </div>
+      </div>
+      <div class="btn-clear">
+        <button id="clear" (click)="clear()" >clear</button>
+        <button id="equals" (click)="equals()">=</button>
+      </div>
+    </div>
+    </div>

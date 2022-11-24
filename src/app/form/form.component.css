@@ -1,0 +1,15 @@
+div{
+    text-align: center;
+}
+lable{
+    text-align: left;
+}
+
+.alert{
+    color: red;
+    margin-bottom:15px;
+    text-align: center;
+}
+.condition{
+    color:red;
+}
